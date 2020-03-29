@@ -43,4 +43,6 @@ $("body").on("scroll", function() {
   $("#overlay").css("bottom", -scrollTop);
 });
 
+//Copywrite year
+document.getElementById("copywrite").innerHTML = "&copy; " + new Date().getFullYear() + " Natalie Hall";
 
