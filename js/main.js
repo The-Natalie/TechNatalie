@@ -44,5 +44,6 @@ $("body").on("scroll", function() {
 });
 
 //Copywrite year
-document.getElementById("copywrite").innerHTML = "&copy; " + new Date().getFullYear() + " Natalie Hall";
-
+$(document).ready(function(){
+	document.getElementById("copywrite").innerHTML = "&copy; " + new Date().getFullYear() + " Natalie Hall";
+});
