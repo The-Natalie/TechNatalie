@@ -4,12 +4,12 @@ function Header() {
 	return (
 		<div className="wrap">
 			<header className="main-header">
-	      <a href="index.html" id="logo">
+	      <div id="logo">
 	    	 <img src="images/TechNatalie_logo2a.gif" alt="TechNatalie logo" />
 	       <h2 className="tagline">Natalie is a Web Developer for hire</h2>
-	      </a>
+	      </div>
 	        <nav>
-	          <ul class="main-nav">
+	          <ul className="main-nav">
 	            <li><a href="#portfolio-sec">Portfolio</a></li>
 	            <li><a href="#about-sec">About</a></li>
 	            <li><a href="#contact-sec">Contact</a></li>
