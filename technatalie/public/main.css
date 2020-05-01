@@ -45,14 +45,14 @@ header {
 	margin: 5px 0 5px 0;
 }
 
-nav li {
+ul.main-nav li {
 		display: inline-block;
 		margin-right: 30px;
 	}
 
-nav a {
+ul.main-nav a {
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 1.6em;
 	text-decoration: none;
 	color: #f8f3c4;
 }
@@ -177,7 +177,7 @@ End of Header
 }
 
 #portfolio-sec {
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
 }
 
@@ -211,7 +211,7 @@ h2 {
 
 h3 {
 	color: #9370db;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	text-align: center;
 }
 
@@ -231,7 +231,7 @@ div.contact p {
 
 p {
 	color: #9d6c6c;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 #about {
@@ -240,7 +240,7 @@ p {
 
 li {
 	color: #4A8383;
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
 
 .container img {
@@ -272,7 +272,7 @@ li {
   outline: none;
   transition: background-color 0.6s ease;
   border-radius: 25px;
-  margin-bottom: 2px;
+  margin: 2px 0 2px 0;
 }
 
 .accordion:hover,
@@ -305,12 +305,13 @@ li {
   transition: max-height 0.4s ease;
   max-width: 90%;
   margin: auto;
+  min-width: 90%;
 }
 
 .accordion__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4;
   padding: 18px;
 }
 
@@ -377,8 +378,9 @@ li {
 
 }
 
-.demo {
+div .demo {
 	text-align: center;
+	padding: 15px 0 15px 0;
 }
 
 #flex-container {
@@ -397,13 +399,13 @@ li {
 
 footer {
 	text-align: center;
-	font-size: .8em;
 }
 
 .footer p {
 	margin-bottom: 0;
 	color: #ffe4e1;
 	padding-bottom: 5px;
+	font-size: 1.1em;
 }
 
 

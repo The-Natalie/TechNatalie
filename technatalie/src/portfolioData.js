@@ -32,7 +32,7 @@ const portfolioData = [
     {
         id: 7,
         compTitle: "<div class='video'> <h2>Video Production and Graphic Design Demo Reel</h2>",
-        rollInfo: "<div className='demo'> <iframe width='560' height='315' src='https://www.youtube.com/embed/hLUQf1UloyA' frameborder='0' allowfullscreen></iframe> </div> </div>"
+        rollInfo: "<div class='demo'> <iframe width='560' height='315' src='https://www.youtube.com/embed/hLUQf1UloyA' frameborder='0' allowfullscreen></iframe> </div> </div>"
     }
 
 ]
