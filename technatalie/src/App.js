@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
 import Header from "./Header"
 import Portfolio from "./Portfolio"
 import About from "./About"
@@ -9,21 +8,20 @@ import Footer from "./Footer"
 function App() {
 	return (
 		<div>
-			{// <ScrollAnimation animateOut='fadeOut' initiallyVisible={true}>
-}	  		<div id="header">
+	  		<div id="header">
 					<Header />
 				</div>
-			{// </ScrollAnimation>
-}			
-			{// <ScrollAnimation animateIn="bounce" animateOut='fadeOut'>
-}				<div id="subpage">
-					<Portfolio />
+				<div className="gradient"></div>
+				<section className="wave-container">
+			  	<div className="wave"></div>
+				</section>
+				<Portfolio />	
+				<div id="subpage">
 					<About />
 					<Contact />
 					<Footer />
 				</div>
-			{// </ScrollAnimation>
-}		</div>
+		</div>
 	)
 }
 

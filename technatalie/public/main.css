@@ -1,15 +1,21 @@
 * {
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
-html, body {
-	min-height: 100%;
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 body {
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Lobster Two';
 	margin: 0;
 	background-color: white;
+	max-width: 100%;
 }
 
 #header {
@@ -20,6 +26,7 @@ body {
 	height: 700px;
 	position : relative;
 	padding-bottom: 50px;
+	z-index: 50;
 }
 
 header {
@@ -31,10 +38,11 @@ header {
 }
 
 .main-nav {
-	text-align: center;
+	text-align: right;
 	list-style: none;
 	/* display: block; */
-	padding: 10px 15px;
+	padding: 0 15px;
+	margin: 5px 0 5px 0;
 }
 
 nav li {
@@ -44,7 +52,7 @@ nav li {
 
 nav a {
 	font-weight: 400;
-	font-size: 4em;
+	font-size: 1.3em;
 	text-decoration: none;
 	color: #f8f3c4;
 }
@@ -71,18 +79,20 @@ nav a {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	max-width: 400px;
 }
 
 .tagline {
 	font-weight: 400;
 	color: #f8c3f4;
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .natalie-photo {
 	float: none;
-	width: 100%;
+	width: 35%;
 	margin: 0 auto 30px;
 	text-align: center;
 }
@@ -100,18 +110,59 @@ nav a {
 	box-shadow: 5px 5px 5px rgba(0,0,0,.9);
 }
 
-footer {
-	color: #a9a9a9;
-	text-align: center;
-	font-size: 2.5em;
-}
-
 .wrap {
 	min-height: calc(100vh - 52px);
 }
 
+.wave-container {
+  position: relative;
+  background: #0c0c26;
+  height: 20vh;
+  z-index: 30;
+}
+
+.wave {
+  position: absolute;
+  height: 115px;
+  width: 100%;
+  background: #0c0c26;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: #0c0c26;
+  left: -1.5%;
+  top: 40%;
+}
+
+.gradient {
+	height: 50px;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(12,12,38,0) 0%, rgba(12,12,38,1) 100%);    
+	z-index: 100;
+	margin-top: -40px;
+	position: absolute;
+}
+
+
 /************
-Subpages
+End of Header
 *************/
 
 #subpage {
@@ -121,12 +172,13 @@ Subpages
 	background-position: 50% 50%;
 }
 
-#subpage footer {
-	color: #ffe4e1;
-}
-
 #portfolio-sec, #about-sec, #contact-sec, .footer {
 	padding-top: 40px;
+}
+
+#portfolio-sec {
+	padding-bottom: 20px;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
 }
 
 .first-letter{
@@ -134,25 +186,36 @@ Subpages
 	font-size: 1.5em;
 }
 
-.container {
+.container, #portfolio-sec {
 	font-family: 'Nunito', sans-serif;
-	padding-left: 1em;
-	padding-right: 1em;
+	/*padding-left: 1em;
+	padding-right: 1em;*/
 }
 
-.container h1 {
+.container {
+	width: 85%;
+	margin: 0 auto;
+	}
+
+h1 {
 	color: #8D26AA;
-	font-size: 2.5em;
+	font-size: 2.4em;
 	text-align: center;
 	text-decoration: underline;	
 }
 
-.container h2 {
+h2 {
+	font-size: 2em;
 	color: #9370db;
-	font-size: 1.4em;
 }
 
-.container h2 a {
+h3 {
+	color: #9370db;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+a {
 	color: #9370db;
 	font-size: inherit;
 	text-decoration: none;
@@ -166,26 +229,91 @@ div.contact p {
 	text-align: center;
 }
 
-.container p {
+p {
 	color: #9d6c6c;
-	font-size: 2em;
+	font-size: 1.4em;
 }
 
-.container #about {
+#about {
 	margin-top: 0;
 }
 
-.container li {
-	color: #3EA271ED;
-	font-size: 1.8em;
+li {
+	color: #4A8383;
+	font-size: 1.4em;
 }
 
 .container img {
 	float: left;
-	margin: 0 20px 20px 0;
-	height: 50%;
-	width: 50%;
+	margin: 0 20px 10px 0;
+	height: 22%;
+	width: 22%;
 }
+
+
+
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 90%
+}
+
+/* These are the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: radial-gradient(circle, rgba(210,154,226,1) 0%, rgba(247,228,229,1) 22%, rgba(193,240,242,1) 100%);
+  cursor: pointer;
+  padding: 18px 18px 18px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  border-radius: 25px;
+  margin-bottom: 2px;
+}
+
+.accordion:hover,
+.active {
+	background: #c1f0f2;
+}
+
+.accordion__title {
+  text-align: left;
+}
+
+.accordion__title h2 {
+	margin: 0 0 0 25px;
+	font-weight: normal;
+}
+
+.accordion__icon {
+  transition: transform 0.6s ease;
+  font-weight: 400;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+/* the accordion content panel is hidden by default */
+.accordion__content {
+  background-color: #ffe4c1;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  max-width: 90%;
+  margin: auto;
+}
+
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+
 
 #gallery {
 	list-style: none;
@@ -198,11 +326,15 @@ div.contact p {
 	display: inline-block;
 	padding: 8px;
 	max-width: 100%;
+	text-align: left;
 }
 
 .bitlathe #gallery li {
 	text-align: left;
 }
+
+
+
 
 .bitlathe #gallery #video-gif {
 	width: 300px;
@@ -210,7 +342,9 @@ div.contact p {
 
 #gallery li img {
 	display: block;
-	width: 250px;
+	width: 175px;
+	float: left;
+	margin: 0 20px 10px 0;
 }
 
 #gallery a {
@@ -261,13 +395,25 @@ div.contact p {
 	max-width: 50%;
 }
 
+footer {
+	text-align: center;
+	font-size: .8em;
+}
+
+.footer p {
+	margin-bottom: 0;
+	color: #ffe4e1;
+	padding-bottom: 5px;
+}
 
 
-/* ============================================================================================================ 
+
+
+/*/* ============================================================================================================ 
   Media Queries
 ============================================================================================================== */
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 
 	#logo img {
 		max-width: 400px;
@@ -316,11 +462,10 @@ div.contact p {
 
 	.natalie-photo img{
 		border-radius: 50%;
-		width: 43%;   /* width: 220px; height: 320px; for mobile: width: 120px; height: 160px */
+		width: 43%;  
 		max-width: 43%;
 		max-height: 43%;
 		opacity: 0.8;
-		/* filter: alpha(opacity=80); For IE8 and earlier */
 		box-shadow: 5px 5px 5px rgba(0,0,0,.9);
 	}
 
@@ -339,31 +484,31 @@ div.contact p {
 	Subpages
 	*************/
 
-	.container {
+/*	.container {
 		width: 85%;
 		margin: 0 auto;
 	}
 
-	.container h1 {
+	h1 {
 		font-size: 1.75em;
     }
 
-	.container h2 {
+	h2 {
 		margin-top: 35px;
 
 	}
 
-	.container h2 br {
+	h2 br {
 		margin-top: 50px;
 	}
 
-	.container p {
+	p {
 		font-size: 1.2em;
 		margin-top: -15px;
 		margin-bottom: 0px;
 	}
 
-	.container li {
+	li {
 		font-size: 1.1em;
 	}
 
@@ -384,5 +529,5 @@ div.contact p {
 
 }
 
-
+*/
 
