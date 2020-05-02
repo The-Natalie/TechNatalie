@@ -43,6 +43,7 @@ header {
 	/* display: block; */
 	padding: 0 15px;
 	margin: 5px 0 5px 0;
+	height: 2.5em;
 }
 
 ul.main-nav li {
@@ -74,12 +75,25 @@ ul.main-nav a {
 	text-decoration: none;
 }
 
-#logo img{
-	width: 80%;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 400px;
+.logo-text {
+  font-family: 'Lora', serif;
+  font-size: 4em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo-char {
+	color: #2F4595;
+}
+
+.logo-name {
+	background-image: linear-gradient(90deg, #008ede 0%, #FC00FF 50%, #f8f3c4 93%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .tagline {
@@ -277,7 +291,13 @@ li {
 
 .accordion:hover,
 .active {
-	background: #c1f0f2;
+	background: #b0a3e2;
+	color: #f8f3c4;
+}
+
+.accordion:hover h2,
+.active h2 {
+	color: #f8f3c4;
 }
 
 .accordion__title {
@@ -300,7 +320,7 @@ li {
 
 /* the accordion content panel is hidden by default */
 .accordion__content {
-  background-color: #ffe4c1;
+  background-color: #c1f0f2;
   overflow: hidden;
   transition: max-height 0.4s ease;
   max-width: 90%;
@@ -315,6 +335,12 @@ li {
   padding: 18px;
 }
 
+.iNoticed-img {
+	display: block;
+	width: 300px;
+	float: right;
+	margin: 10px 10px 20px 0;
+}
 
 #gallery {
 	list-style: none;
@@ -333,9 +359,6 @@ li {
 .bitlathe #gallery li {
 	text-align: left;
 }
-
-
-
 
 .bitlathe #gallery #video-gif {
 	width: 300px;

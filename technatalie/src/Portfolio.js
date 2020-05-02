@@ -7,7 +7,7 @@ import Accordion from "./components/Accordion";
 
 function Portfolio() {
 
-const portfolioComponents = portfolioData.map(data => <Accordion key={data.id} compTitle={data.compTitle} rollInfo={data.rollInfo} />)
+  const portfolioComponents = portfolioData.map(data => <Accordion key={data.id} compTitle={data.compTitle} rollInfo={data.rollInfo} />)
 
   return (
     <section id="portfolio-sec">

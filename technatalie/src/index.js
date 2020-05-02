@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fonts/LobsterTwo-Italic.ttf'
 import './fonts/PrincessSofia-Regular.ttf'
+import './fonts/Lora-Italic-VariableFont_wght.ttf'
+import './fonts/Lora-VariableFont_wght.ttf'
 
 ReactDOM.render(
   <React.StrictMode>
