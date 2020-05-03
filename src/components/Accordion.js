@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import portfolioData from "../portfolioData";
 import Chevron from "./Chevron";
 
 function Accordion(props) {

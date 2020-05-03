@@ -42,7 +42,7 @@ header {
 	list-style: none;
 	/* display: block; */
 	padding: 0 15px;
-	margin: 5px 0 5px 0;
+	margin: 40px 0 5px 0;
 	height: 2.5em;
 }
 
@@ -80,6 +80,7 @@ ul.main-nav a {
   font-size: 4em;
   font-weight: 600;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .logo-char {
@@ -95,13 +96,13 @@ ul.main-nav a {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
 .tagline {
 	font-weight: 400;
 	color: #f8c3f4;
 	font-size: 2.5em;
 	text-align: center;
 	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 .natalie-photo {
@@ -118,9 +119,8 @@ ul.main-nav a {
 
 .natalie-photo img{
 	border-radius: 50%;
-	width: 50%;   
-	min-width: 50%;
-	max-width: 50%;
+	width: 15em;   
+	max-width: 15.5em;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.9);
 }
 
@@ -215,7 +215,6 @@ h1 {
 	color: #8D26AA;
 	font-size: 2.4em;
 	text-align: center;
-	text-decoration: underline;	
 }
 
 h2 {
@@ -260,8 +259,8 @@ li {
 .container img {
 	float: left;
 	margin: 0 20px 10px 0;
-	height: 22%;
-	width: 22%;
+	width: 14em;
+	max-width: 14.5em;
 }
 
 

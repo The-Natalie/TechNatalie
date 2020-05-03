@@ -18,7 +18,7 @@ function Header() {
 	    </header>
 	    <section>
 	      <div className="natalie-photo">
-	        <img src="images/IMG_1028.jpg" alt="Picture of Natalie" />
+	        <img src="images/IMG_1028.jpg" alt="Natalie" />
 	      </div>
 	    </section>
     </div>
