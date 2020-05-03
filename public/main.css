@@ -428,9 +428,24 @@ footer {
 	font-size: 1.1em;
 }
 
+@media only screen and (max-width: 522px) {
+	.iNoticed-img {
+		float: none;
+	}
+}
 
 @media only screen and (max-width: 514px) {
 	.gradient {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 428px) {
+	.container img {
+		float: none;
+	}
+
+	#gallery li img {
+	float: none;
 	}
 }
