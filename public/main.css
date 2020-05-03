@@ -106,9 +106,6 @@ ul.main-nav a {
 }
 
 .natalie-photo {
-	float: none;
-	width: 35%;
-	margin: 0 auto 30px;
 	text-align: center;
 }
 
@@ -122,6 +119,7 @@ ul.main-nav a {
 	width: 15em;   
 	max-width: 15.5em;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.9);
+	z-index: 110;
 }
 
 .wrap {
@@ -259,8 +257,8 @@ li {
 .container img {
 	float: left;
 	margin: 0 20px 10px 0;
-	width: 14em;
-	max-width: 14.5em;
+	width: 13em;
+	max-width: 13.5em;
 }
 
 
@@ -431,127 +429,8 @@ footer {
 }
 
 
-
-
-/*/* ============================================================================================================ 
-  Media Queries
-============================================================================================================== */
-
-/*@media (min-width: 992px) {
-
-	#logo img {
-		max-width: 400px;
+@media only screen and (max-width: 514px) {
+	.gradient {
+		display: none;
 	}
-
-	nav {
-		text-align: right;
-		padding: 10px 0;
-		margin: -56px 0 15px 0;
-	}
-
-	nav a {
-		font-size: 1.5em;
-	}
-
-	nav ul {
-		list-style: none;
-		margin: 0 10px;
-		padding: 0;
-	}
-
-	nav li {
-		display: inline-block;
-		margin-right: 15px;
-	}
-
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.main-nav {
-		display: inline-block;
-		list-style: circle;
-		text-align: right;
-	}
-
-	.natalie-photo {
-		float: none;
-		width: 35%;
-	}
-
-	.natalie-photo p{
-	font-size: 1.3em;
-	}
-
-	.natalie-photo img{
-		border-radius: 50%;
-		width: 43%;  
-		max-width: 43%;
-		max-height: 43%;
-		opacity: 0.8;
-		box-shadow: 5px 5px 5px rgba(0,0,0,.9);
-	}
-
-
-	footer {
-		font-size: 1em;
-		margin: 0 0 0 0;
-		padding-bottom: 5px;
-	}
-
-	footer p {
-		margin: 0 0 0 0;
-	}
-
-	/************
-	Subpages
-	*************/
-
-/*	.container {
-		width: 85%;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 1.75em;
-    }
-
-	h2 {
-		margin-top: 35px;
-
-	}
-
-	h2 br {
-		margin-top: 50px;
-	}
-
-	p {
-		font-size: 1.2em;
-		margin-top: -15px;
-		margin-bottom: 0px;
-	}
-
-	li {
-		font-size: 1.1em;
-	}
-
-	.container img {
-		float: left;
-		margin: 0 20px 10px 0;
-		height: 22%;
-		width: 22%;
-	}
-
-	#gallery li img {
-		width: 175px;
-	}
-
-	.bitlathe #gallery #video-gif {
-		width: 200px;
-	}
-
 }
-
-*/
-
