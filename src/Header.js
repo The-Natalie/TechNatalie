@@ -5,7 +5,7 @@ function Header() {
 		<div className="wrap">
 			<header className="main-header">
 	      <div id="logo">
-	    	 <img src="images/TechNatalie_logo2a.gif" alt="TechNatalie logo" />
+	    	 <h1 className="logo-text"><span className="logo-char">{'<'}</span><span className="logo-name">techNatalie </span><span className="logo-char">{'/>'}</span></h1>
 	       <h2 className="tagline">Natalie is a Web Developer for hire</h2>
 	      </div>
 	        <nav>
