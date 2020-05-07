@@ -5,10 +5,14 @@
 
 html,body
 {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
 }
 
 body {
@@ -40,14 +44,16 @@ header {
 .main-nav {
 	text-align: right;
 	list-style: none;
-	/* display: block; */
 	padding: 0 15px;
 	margin: 40px 0 5px 0;
 	height: 2.5em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
 ul.main-nav li {
-		display: inline-block;
 		margin-right: 30px;
 	}
 
@@ -81,6 +87,7 @@ ul.main-nav a {
   font-weight: 600;
   text-decoration: none;
   margin-bottom: 20px;
+  overflow-wrap: break-word;
 }
 
 .logo-char {
@@ -184,11 +191,11 @@ End of Header
 	background-position: 50% 50%;
 }
 
-#portfolio-sec, #about-sec, #contact-sec, .footer {
+#portfolio, #skills, #about, #contact, .footer {
 	padding-top: 40px;
 }
 
-#portfolio-sec {
+#portfolio {
 	padding-bottom: 40px;
 	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
 }
@@ -198,7 +205,7 @@ End of Header
 	font-size: 1.5em;
 }
 
-.container, #portfolio-sec {
+.container, #portfolio {
 	font-family: 'Nunito', sans-serif;
 	/*padding-left: 1em;
 	padding-right: 1em;*/
@@ -232,6 +239,70 @@ a {
 	text-decoration: none;
 }
 
+.skill-button-title {
+	margin-bottom: -5px;
+	text-align: center;
+}
+
+.skill-button, .other-skills-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.skill-button button {
+	font-size: 1.4em;
+	margin: 5px;
+	background: #D92B77;
+	color: #f8f3c4;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.other-skills-button {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.other-skills-button button {
+	font-size: 1.4em;
+	margin: 5px;
+	background: #2BD93E;
+	color: #f8f3c4;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.app-outer {
+	align-items: center; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0;
+	width: 100%;
+	height: 450px;
+	margin-bottom: 40px;
+}
+
+.app-inner {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 100%;
+	width: 100%;
+}
+
+.tag-cloud {
+	flex: 1;
+}
+
+.tag-cloud > div {
+	transition: 1.4s;
+}
+
 div.contact h2 {
 	text-align: center;
 }
@@ -243,10 +314,6 @@ div.contact p {
 p {
 	color: #9d6c6c;
 	font-size: 1.2em;
-}
-
-#about {
-	margin-top: 0;
 }
 
 li {
@@ -267,7 +334,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 90%
+  max-width: 95%
 }
 
 /* These are the buttons that are used to open and close the accordion panel */
@@ -309,6 +376,7 @@ li {
 .accordion__icon {
   transition: transform 0.6s ease;
   font-weight: 400;
+  flex: 0 0 20px;
 }
 
 .rotate {
@@ -344,11 +412,12 @@ li {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
+	padding-left: 0;
 }
 
 #gallery li {
 	display: inline-block;
-	padding: 8px;
+	padding: 8px 8px 20px 8px;
 	max-width: 100%;
 	text-align: left;
 }
@@ -428,24 +497,99 @@ footer {
 	font-size: 1.1em;
 }
 
-@media only screen and (max-width: 522px) {
-	.iNoticed-img {
-		float: none;
+@media only screen and (max-width: 950px) {
+	.app-outer {
+		height: 510px;
 	}
+}
+
+@media only screen and (max-width: 895px) {
+	.app-outer {
+		height: 570px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.main-nav {
+			justify-content: center;
+		}
+
+	.app-outer {
+		height: 670px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.container {
+		width: 95%;
+	}
+
+	.app-outer {
+		height: 720px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.app-outer {
+		height: 850px;
+	}
+}
+
+@media only screen and (max-width: 522px) {
+	.main-nav {
+			justify-content: space-evenly;
+		}
+
+	ul.main-nav li {
+			margin-right: 0;
+		}
 }
 
 @media only screen and (max-width: 514px) {
 	.gradient {
 		display: none;
 	}
+
+	.iNoticed-img {
+		float: none;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.app-outer {
+		height: 900px;
+	}
 }
 
 @media only screen and (max-width: 428px) {
+	.container {
+		width: 100%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
 	.container img {
 		float: none;
 	}
 
 	#gallery li img {
 	float: none;
+	margin: auto;
+	}
+
+	.app-outer {
+		height: 950px;
+	}
+
+	.other-skill {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	.app-outer {
+		height: 1000px;
 	}
 }

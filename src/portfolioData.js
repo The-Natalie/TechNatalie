@@ -1,13 +1,13 @@
 const portfolioData = [
     {
         id: 1,
-        compTitle: "<h2>iNoticed (October 2019 - Present)</h2>",
-        rollInfo: "<p id='gallery' style='text-align:left;'>This is my personal project about kindness, being valued, and a new way of dating. The idea is that when you are in public and you notice someone doing something nice, or having a bad day, or you're just attracted to someone, you hand them a card. There are specific cards to hand out depending on the situation. <a class='pic-overlay' href='images/Portfolio/iNoticed/iNoticed_Card_Demo.gif'><img class='iNoticed-img' src='images/Portfolio/iNoticed/iNoticed_Card_Demo.gif' alt='iNoticed Home Page Demo'></a> The dating section is a full-blown dating app - you hand a card to someone you'd like to date and they visit the website to check out your profile and message you. It makes it easier to approach people. <br /> I created every aspect of the site using JavaScript, PHP, HTML, CSS, SCSS, jQuery, Bootstrap, particles.js, XML, AJAX, MySQL/SQL, Git, Bash, Python, and zippopotam.us.<br /> This web app is still a work in progress, but feel free to <a href='https://inoticed.org' target='_blank' rel='noopener noreferrer'>visit it here</a>.<br /> iNoticed's repo has been added to <a href='https://github.com/The-Natalie' target='_blank' rel='noopener noreferrer'>Github here</a>.</p>"
+        compTitle: "<h2>TechNatalie (Created 2017, Redone in React May 2020)</h2>",
+        rollInfo: "<p>This website was originally created from scratch using HTML, CSS, JavaScript and jQuery, with a mobile first approach. After learning React, I decided to redo the site using React, JavaScript/JSX, jQuery, HTML, CSS, React-Tag-Cloud, RandomColor, and React-Animate-On-Scroll using Animations.css. I also created the backgrounds and logo.</p>"
     },
     {
         id: 2,
-        compTitle: "<h2>TechNatalie (2017 - Present)</h2>",
-        rollInfo: "<p>This website was originally created from scratch using HTML5, CSS3, JavaScript and jQuery, with a mobile first approach. After learning React I decided to redo the site using React, JavaScript/JSX, jQuery, and React-Animate-On-Scroll using Animations.css. I also created the backgrounds and logo.</p>"
+        compTitle: "<h2>iNoticed (October 2019 - Present)</h2>",
+        rollInfo: "<p id='gallery' style='text-align:left;'>This is my personal project about kindness, being valued, and a new way of dating. The idea is that when you are in public and you notice someone doing something nice, or having a bad day, or you're just attracted to someone, you hand them a card. There are specific cards to hand out depending on the situation. <a class='pic-overlay' href='images/Portfolio/iNoticed/iNoticed_Card_Demo.gif'><img class='iNoticed-img' src='images/Portfolio/iNoticed/iNoticed_Card_Demo.gif' alt='iNoticed Home Page Demo'></a> The dating section is a full-blown dating app - you hand a card to someone you'd like to date and they visit the website to check out your profile and message you. It makes it easier to approach people. <br /> I created every aspect of the site using JavaScript, PHP, HTML, CSS, SCSS, jQuery, Bootstrap, particles.js, XML, AJAX, MySQL/SQL, Git, Bash, Python, and zippopotam.us.<br /> This web app is still a work in progress, but feel free to <a href='https://inoticed.org' target='_blank' rel='noopener noreferrer'>visit it here</a>.<br /> iNoticed's repo has been added to <a href='https://github.com/The-Natalie' target='_blank' rel='noopener noreferrer'>Github here</a>.</p>"
     },
     {
         id: 3,

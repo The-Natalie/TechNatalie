@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header"
 import Portfolio from "./Portfolio"
+import Skills from "./Skills"
 import About from "./About"
 import Contact from "./Contact"
 import Footer from "./Footer"
@@ -51,6 +52,41 @@ class App extends React.Component {
 		  $("#overlay").css("top", scrollTop);
 		  $("#overlay").css("bottom", -scrollTop);
 		});
+
+		$(".most-button").click(function() {
+			$(".most-skill").css({"opacity": 1});
+			$(".less-skill").css({"opacity": 0.2});
+			$(".none-skill").css({"opacity": 0.2});
+			$(".other-skill").css({"opacity": 0.2});
+		});
+
+		$(".less-button").click(function() {
+			$(".most-skill").css({"opacity": 0.2});
+			$(".less-skill").css({"opacity": 1});
+			$(".none-skill").css({"opacity": 0.2});
+			$(".other-skill").css({"opacity": 0.2});
+		});
+
+		$(".none-button").click(function() {
+			$(".most-skill").css({"opacity": 0.2});
+			$(".less-skill").css({"opacity": 0.2});
+			$(".none-skill").css({"opacity": 1});
+			$(".other-skill").css({"opacity": 0.2});
+		});
+
+		$(".other-button").click(function() {
+			$(".most-skill").css({"opacity": 0.2});
+			$(".less-skill").css({"opacity": 0.2});
+			$(".none-skill").css({"opacity": 0.2});
+			$(".other-skill").css({"opacity": 1});
+		});
+
+		$(".all-button").click(function() {
+			$(".most-skill").css({"opacity": 1});
+			$(".less-skill").css({"opacity": 1});
+			$(".none-skill").css({"opacity": 0.7});
+			$(".other-skill").css({"opacity": 0.6});
+		});
   }
 
   render () {
@@ -65,6 +101,7 @@ class App extends React.Component {
 				</section>
 				<Portfolio />	
 				<div id="subpage">
+					<Skills />
 					<About />
 					<Contact />
 					<Footer />

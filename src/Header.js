@@ -5,14 +5,15 @@ function Header() {
 		<div className="wrap">
 			<header className="main-header">
 	      <div id="logo">
-	    	 <h1 className="logo-text"><span className="logo-char">{'<'}</span><span className="logo-name">techNatalie </span><span className="logo-char">{'/>'}</span></h1>
+	    	 <h1 className="logo-text"><span className="logo-char">{'<'}</span><span style={{fontSize:'1px'}}> </span><span className="logo-name">techNatalie </span><span className="logo-char">{'/>'}</span></h1>
 	       <h2 className="tagline">Natalie is a Web Developer for hire</h2>
 	      </div>
 	        <nav>
 	          <ul className="main-nav">
-	            <li><a href="#portfolio-sec">Portfolio</a></li>
-	            <li><a href="#about-sec">About</a></li>
-	            <li><a href="#contact-sec">Contact</a></li>
+	            <li><a href="#portfolio">Portfolio</a></li>
+	            <li><a href="#skills">Skills</a></li>
+	            <li><a href="#about">About</a></li>
+	            <li><a href="#contact">Contact</a></li>
 	          </ul>
 	        </nav>
 	    </header>
