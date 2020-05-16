@@ -65,6 +65,10 @@ ul.main-nav a {
 	color: #f8f3c4;
 }
 
+ul.main-nav a:hover {
+	color: #fff679;
+}
+
 .section-title {
 	font-size: 3em;
 	text-align: center;
@@ -262,11 +266,7 @@ a {
 	padding-bottom: 10px;
 }
 
-.skill-button button:hover {
-	background: #DF5692;
-}
-
-.skill-button button:focus {	
+.skill-button button:hover, .skill-button button:focus {
 	background: #801946;
 }
 
@@ -285,11 +285,7 @@ a {
 	padding-bottom: 10px;
 }
 
-.other-skills-button button:hover {
-	background: #63D970;
-}
-
-.other-skills-button button:focus {
+.other-skills-button button:hover, .other-skills-button button:focus {
 	background: #1C9729;
 }
 
@@ -587,7 +583,7 @@ footer {
 	}
 
 	ul.main-nav a {
-		font-size: 1.4em;
+		font-size: 1.4em;		
 	}
 
 	.app-outer {
@@ -604,6 +600,12 @@ footer {
 
 	.container img {
 		float: none;
+	}
+
+	ul.main-nav a {
+		font-size: 1.2em;
+		border: solid;
+		padding: 2px 4px;		
 	}
 
 	#gallery li img {
@@ -651,6 +653,12 @@ footer {
 		margin: auto;
 		padding-bottom: 5px;
 	}	
+}
+
+@media only screen and (max-width: 357px) {
+	.main-nav {
+		height: 5em;
+	}
 }
 
 @media only screen and (max-width: 349px) {
