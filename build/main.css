@@ -13,10 +13,11 @@ html,body
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-smooth: always;
-}
+/*  scroll-behavior: smooth;
+*/}
 
 body {
-	font-family: 'Lobster Two';
+	font-family: 'Nunito', sans-serif;
 	margin: 0;
 	background-color: white;
 	max-width: 100%;
@@ -184,12 +185,12 @@ ul.main-nav a {
 End of Header
 *************/
 
-#subpage {
+/*#subpage {
 	background-image: url("../images/background_secondary.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-}
+}*/
 
 #portfolio, #skills, #about, #contact, .footer {
 	padding-top: 40px;
@@ -197,8 +198,8 @@ End of Header
 
 #portfolio {
 	padding-bottom: 40px;
-	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
-}
+/*	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
+*/}
 
 .first-letter{
 	font-family: 'Princess Sofia', cursive;
@@ -261,6 +262,14 @@ a {
 	padding-bottom: 10px;
 }
 
+.skill-button button:hover {
+	background: #DF5692;
+}
+
+.skill-button button:focus {	
+	background: #801946;
+}
+
 .other-skills-button {
 	text-align: center;
 	margin-top: 10px;
@@ -274,6 +283,14 @@ a {
 	cursor: pointer;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.other-skills-button button:hover {
+	background: #63D970;
+}
+
+.other-skills-button button:focus {
+	background: #1C9729;
 }
 
 .app-outer {
@@ -312,12 +329,12 @@ div.contact p {
 }
 
 p {
-	color: #9d6c6c;
+	color: #623737;
 	font-size: 1.2em;
 }
 
 li {
-	color: #4A8383;
+	color: #1E4646;
 	font-size: 1.1em;
 }
 
@@ -339,7 +356,7 @@ li {
 
 /* These are the buttons that are used to open and close the accordion panel */
 .accordion {
-  background: radial-gradient(circle, rgba(210,154,226,1) 0%, rgba(247,228,229,1) 22%, rgba(193,240,242,1) 100%);
+	background: radial-gradient(circle, rgb(245, 233, 249) 0%, rgb(247, 228, 229) 22%, rgb(193, 240, 242) 100%);
   cursor: pointer;
   padding: 18px 18px 18px 30px;
   display: flex;
@@ -385,7 +402,7 @@ li {
 
 /* the accordion content panel is hidden by default */
 .accordion__content {
-  background-color: #c1f0f2;
+  background-color: #f4f4f4;
   overflow: hidden;
   transition: max-height 0.4s ease;
   max-width: 90%;
@@ -396,7 +413,6 @@ li {
 .accordion__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.4;
   padding: 18px;
 }
 
@@ -492,7 +508,7 @@ footer {
 
 .footer p {
 	margin-bottom: 0;
-	color: #ffe4e1;
+	color: #9d7878;
 	padding-bottom: 5px;
 	font-size: 1.1em;
 }
@@ -557,6 +573,23 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
+	header.main-header {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.logo-text {
+		font-size: 3.5em;
+	}
+
+	.tagline {
+		font-size: 2.2em;
+	}
+
+	ul.main-nav a {
+		font-size: 1.4em;
+	}
+
 	.app-outer {
 		height: 900px;
 	}
@@ -565,8 +598,8 @@ footer {
 @media only screen and (max-width: 428px) {
 	.container {
 		width: 100%;
-		padding-left: 2px;
-		padding-right: 2px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 	.container img {
@@ -586,10 +619,42 @@ footer {
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 	}
+
+	#about, #contact {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	#about img {
+		float: left;
+	}
 }
 
 @media only screen and (max-width: 410px) {
 	.app-outer {
 		height: 1000px;
 	}
+}
+
+@media only screen and (max-width: 385px) {
+	.logo-text {
+			font-size: 3.2em;
+		}
+
+		.tagline {
+			font-size: 2em;
+		}
+
+	#about img {
+		display: block;
+		float: none;
+		margin: auto;
+		padding-bottom: 5px;
+	}	
+}
+
+@media only screen and (max-width: 349px) {
+	.logo-text {
+			font-size: 2.8em;
+		}
 }

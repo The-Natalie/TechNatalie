@@ -10,6 +10,23 @@ import $ from "jquery";
 class App extends React.Component {
 	
  componentDidMount() {
+
+ 		//Smooth scroll effect
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        window.location.hash = hash;
+	      });
+	    } 
+	  });
+
+
+ 		//Picture Overlay
     let $overlay = $('<div id="overlay"></div>');
 		let $image = $("<img>");
 		let $caption = $("<p></p>");
@@ -26,7 +43,7 @@ class App extends React.Component {
 		$("body").append($overlay);
 
 		//Capture the click event on a link to an image
-		$("#gallery a").click(function(event) {
+		$("#gallery a:not(.ext-link)").click(function(event) {
 			event.preventDefault();
 			let imageLocation = $(this).attr("href");
 			$image.attr("src", imageLocation);
@@ -45,7 +62,6 @@ class App extends React.Component {
 			$overlay.hide();
 		})
 
-
 		//Trying to fix the scroll on the overlay, it's not covering the whole page
 		$("body").on("scroll", function() {
 		  let scrollTop = $(this).scrollTop();
@@ -53,38 +69,40 @@ class App extends React.Component {
 		  $("#overlay").css("bottom", -scrollTop);
 		});
 
+
+		//Skill buttons:
 		$(".most-button").click(function() {
-			$(".most-skill").css({"opacity": 1});
-			$(".less-skill").css({"opacity": 0.2});
-			$(".none-skill").css({"opacity": 0.2});
-			$(".other-skill").css({"opacity": 0.2});
+			$(".most-skill").css({"opacity": 1, "text-decoration": "underline"});
+			$(".less-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".none-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".other-skill").css({"opacity": 0.15});
 		});
 
 		$(".less-button").click(function() {
-			$(".most-skill").css({"opacity": 0.2});
-			$(".less-skill").css({"opacity": 1});
-			$(".none-skill").css({"opacity": 0.2});
-			$(".other-skill").css({"opacity": 0.2});
+			$(".most-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".less-skill").css({"opacity": 1, "text-decoration": "underline"});
+			$(".none-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".other-skill").css({"opacity": 0.15});
 		});
 
 		$(".none-button").click(function() {
-			$(".most-skill").css({"opacity": 0.2});
-			$(".less-skill").css({"opacity": 0.2});
-			$(".none-skill").css({"opacity": 1});
-			$(".other-skill").css({"opacity": 0.2});
+			$(".most-skill").css({"opacity": 0.1, "text-decoration": "none"});
+			$(".less-skill").css({"opacity": 0.1, "text-decoration": "none"});
+			$(".none-skill").css({"opacity": 1, "text-decoration": "underline"});
+			$(".other-skill").css({"opacity": 0.1});
 		});
 
 		$(".other-button").click(function() {
-			$(".most-skill").css({"opacity": 0.2});
-			$(".less-skill").css({"opacity": 0.2});
-			$(".none-skill").css({"opacity": 0.2});
+			$(".most-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".less-skill").css({"opacity": 0.15, "text-decoration": "none"});
+			$(".none-skill").css({"opacity": 0.15, "text-decoration": "none"});
 			$(".other-skill").css({"opacity": 1});
 		});
 
 		$(".all-button").click(function() {
-			$(".most-skill").css({"opacity": 1});
-			$(".less-skill").css({"opacity": 1});
-			$(".none-skill").css({"opacity": 0.7});
+			$(".most-skill").css({"opacity": 1, "text-decoration": "none"});
+			$(".less-skill").css({"opacity": 1, "text-decoration": "none"});
+			$(".none-skill").css({"opacity": 0.7, "text-decoration": "none"});
 			$(".other-skill").css({"opacity": 0.6});
 		});
   }
