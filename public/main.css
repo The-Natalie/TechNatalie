@@ -604,13 +604,12 @@ footer {
 
 	ul.main-nav a {
 		font-size: 1.2em;
-		border: solid;
 		padding: 2px 4px;		
 	}
 
 	#gallery li img {
-	float: none;
-	margin: auto;
+		float: none;
+		margin: auto;
 	}
 
 	.app-outer {
@@ -655,14 +654,17 @@ footer {
 	}	
 }
 
-@media only screen and (max-width: 357px) {
+@media only screen and (max-width: 349px) {
 	.main-nav {
 		height: 5em;
 	}
-}
 
-@media only screen and (max-width: 349px) {
 	.logo-text {
 			font-size: 2.8em;
 		}
+
+	ul.main-nav a {
+		border: solid;
+	}
+}	
 }
