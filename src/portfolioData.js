@@ -2,7 +2,7 @@ const portfolioData = [
     {
         id: 1,
         compTitle: "<h2 tabindex='0'>JavaScript Jungle (June 2020)</h2>",
-        rollInfo: "<p>JavaScript Jungle is a newsletter I'm working on creating a newsletter that explores the lesser-known JavaScript terms. I'm also working on a website for it, which will mostly serve as a way to subscribe to the newsletter.</p>"
+        rollInfo: "<p>JavaScript Jungle is a newsletter I'm working on creating that explores the lesser-known JavaScript terms. I'm also working on a website for it, which will mostly serve as a way to subscribe to the newsletter.</p>"
     },
     {
         id: 2,
