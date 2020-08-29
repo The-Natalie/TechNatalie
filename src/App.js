@@ -25,6 +25,19 @@ class App extends React.Component {
 	    } 
 	  });
 
+		//to top button:
+		let toTopButton = document.getElementById("toTop");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    toTopButton.style.display = "block";
+		  } else {
+		    toTopButton.style.display = "none";
+		  }
+		}
 
  		//Picture Overlay
     let $overlay = $('<div id="overlay"></div>');
@@ -117,6 +130,7 @@ class App extends React.Component {
 			  	<div className="wave" style={{height: "150px", overflow: "hidden"}}><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: "100%", width: "100%"}}><path d="M-0.85,143.58 C150.00,150.00 271.49,-50.00 501.40,142.58 L500.00,0.00 L0.00,0.00 Z" style={{stroke: "none", fill: "#0c0c26"}}></path></svg>
 			  	</div>
 				</section>
+				<button id="toTop" title="Go to top"><a href="#header"><i class="fas fa-arrow-circle-up"></i></a></button> 
 				<Portfolio />	
 				<div id="subpage">
 					<Skills />
