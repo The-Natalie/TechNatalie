@@ -13,8 +13,7 @@ html,body
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-smooth: always;
-/*  scroll-behavior: smooth;
-*/}
+}
 
 body {
 	font-family: 'Nunito', sans-serif;
@@ -140,7 +139,6 @@ ul.main-nav a:hover {
 
 .wave-container {
   position: relative;
-  background: #0c0c26;
   height: 20vh;
   z-index: 30;
 }
@@ -149,30 +147,6 @@ ul.main-nav a:hover {
   position: absolute;
   height: 115px;
   width: 100%;
-  background: #0c0c26;
-  bottom: 0;
-}
-
-.wave::before, .wave::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-}
-
-.wave::before {
-  width: 55%;
-  height: 109%;
-  background-color: #fff;
-  right: -1.5%;
-  top: 60%;
-}
-.wave::after {
-  width: 55%;
-  height: 100%;
-  background-color: #0c0c26;
-  left: -1.5%;
-  top: 40%;
 }
 
 .gradient {
@@ -189,12 +163,7 @@ ul.main-nav a:hover {
 End of Header
 *************/
 
-/*#subpage {
-	background-image: url("../images/background_secondary.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-}*/
+
 
 #portfolio, #skills, #about, #contact, .footer {
 	padding-top: 40px;
@@ -202,8 +171,7 @@ End of Header
 
 #portfolio {
 	padding-bottom: 40px;
-/*	background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(247,228,229,1) 100%); 
-*/}
+}
 
 .first-letter{
 	font-family: 'Princess Sofia', cursive;
@@ -212,8 +180,6 @@ End of Header
 
 .container, #portfolio {
 	font-family: 'Nunito', sans-serif;
-	/*padding-left: 1em;
-	padding-right: 1em;*/
 }
 
 .container {
@@ -347,7 +313,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 95%
+  max-width: 75%;
 }
 
 /* These are the buttons that are used to open and close the accordion panel */
@@ -508,10 +474,13 @@ footer {
 	padding-bottom: 5px;
 	font-size: 1.1em;
 }
-
+/************************************************ Media Section *************************************/
 @media only screen and (max-width: 950px) {
 	.app-outer {
 		height: 510px;
+	}
+	.accordion__section {
+	  max-width: 80%;
 	}
 }
 
@@ -539,11 +508,17 @@ footer {
 	.app-outer {
 		height: 720px;
 	}
+	.accordion__section {
+	  max-width: 85%;
+	}
 }
 
 @media only screen and (max-width: 570px) {
 	.app-outer {
 		height: 850px;
+	}
+	.accordion__section {
+	  max-width: 90%;
 	}
 }
 
@@ -588,6 +563,9 @@ footer {
 
 	.app-outer {
 		height: 900px;
+	}
+	.accordion__section {
+	  max-width: 95%;
 	}
 }
 

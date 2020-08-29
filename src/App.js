@@ -106,7 +106,6 @@ class App extends React.Component {
 			$(".other-skill").css({"opacity": 0.6});
 		});
   }
-
   render () {
 		return (
 			<div>
@@ -115,7 +114,8 @@ class App extends React.Component {
 				</div>
 				<div className="gradient"></div>
 				<section className="wave-container">
-			  	<div className="wave"></div>
+			  	<div className="wave" style={{height: "150px", overflow: "hidden"}}><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: "100%", width: "100%"}}><path d="M-0.85,143.58 C150.00,150.00 271.49,-50.00 501.40,142.58 L500.00,0.00 L0.00,0.00 Z" style={{stroke: "none", fill: "#0c0c26"}}></path></svg>
+			  	</div>
 				</section>
 				<Portfolio />	
 				<div id="subpage">
