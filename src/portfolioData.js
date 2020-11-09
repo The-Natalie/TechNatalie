@@ -1,13 +1,13 @@
-const portfolioData = [
+let portfolioData = [
     {
         id: 1,
-        compTitle: "<h2 tabindex='0'>JavaScript Jungle (June 2020)</h2>",
-        rollInfo: "<p>JavaScript Jungle is a newsletter I'm working on creating that explores the lesser-known JavaScript terms. I'm also working on a website for it, which will mostly serve as a way to subscribe to the newsletter.</p>"
+        compTitle: "<h2 tabindex='0'>JavaScript Jungle (June 2020 - Present)</h2>",
+        rollInfo: "<p id='gallery' style='text-align:left;'><a class='pic-overlay' href='images/Portfolio/JavaScriptJungle/JavaScript_Jungle.gif'><img class='iNoticed-img' src='images/Portfolio/JavaScriptJungle/JavaScript_Jungle.gif' alt='JavaScript Jungle Website'></a>JavaScript Jungle is a short daily email newsletter that explores lesser-known JavaScript terms. These are the methods and properties that aren't usually taught in beginner or even intermediate courses. <br />I also created a <a class='ext-link' href='https://javascriptjungle.com' target='_blank'>website for it here</a>, which mostly serves as a way to subscribe to the newsletter.</p>"
     },
     {
         id: 2,
         compTitle: "<h2 tabindex='0'>TechNatalie (Created 2017, Redone in React May 2020)</h2>",
-        rollInfo: "<p>This website was originally created from scratch using HTML, CSS, JavaScript and jQuery, with a mobile first approach. After learning React, I decided to redo the site using React, JavaScript/JSX, jQuery, HTML, CSS, Babel, React-Tag-Cloud, RandomColor, and React-Animate-On-Scroll using Animations.css. I also created the backgrounds and logo.</p>"
+        rollInfo: "<p>This website was originally created from scratch using HTML, CSS, JavaScript and jQuery, with a mobile first approach. After learning React, I decided to redo the site using React, JavaScript/JSX, jQuery, HTML, CSS, Babel, React-Tag-Cloud, RandomColor, and React-Animate-On-Scroll using Animations.css. I also created the backgrounds and logo."
     },
     {
         id: 3,
