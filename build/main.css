@@ -191,6 +191,15 @@ End of Header
 	padding-bottom: 40px;
 }
 
+.job-title {
+  padding-left: 20px;
+}
+
+.job-title span {
+  font-size: .9em;
+  font-weight: bold;
+}
+
 .first-letter{
 	font-family: 'Princess Sofia', cursive;
 	font-size: 1.5em;
@@ -667,4 +676,4 @@ footer {
 		border: solid;
 	}
 }	
-}
+

@@ -13,7 +13,7 @@ function Contact() {
           <h3><a href="https://linkedin.com/in/nataliedhall" target="_blank" rel="noopener noreferrer">LinkedIn</a></h3>
           <h3><a href="https://github.com/The-Natalie" target="_blank" rel="noopener noreferrer">Github</a></h3>
           <br />
-          <p>Natalie is currently located in Stuarts Draft, VA and is looking for a job that is either remote or within Charlottesville, Lexington, Harrisonburg, and the areas inbetween.</p>
+          <p>Natalie is currently located in Stuarts Draft, <b>Virginia</b> and is looking for a job that is either <b>remote</b> or within <b>Charlottesville</b>, <b>Lexington</b>, <b>Harrisonburg</b>, and the areas in between.</p>
           <br />
           <p>**Resume available upon request**</p>
         </div>
